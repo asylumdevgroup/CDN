@@ -1,0 +1,28 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "E": {
+            "tag": "malum:spectral_lens"
+          },
+          "X": {
+            "tag": "malum:spirit_fabric"
+          }
+        },
+        "pattern": [
+          " X ",
+          "XEX",
+          " X "
+        ],
+        "result": {
+          "item": "superiorshields:spirit_hunter_shield"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

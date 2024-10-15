@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "E": {
+            "tag": "forge:component_steel"
+          },
+          "G": {
+            "tag": "forge:ingots/steel"
+          },
+          "X": {
+            "tag": "forge:wooden_grip"
+          }
+        },
+        "pattern": [
+          " G ",
+          "XEX",
+          " G "
+        ],
+        "result": {
+          "item": "superiorshields:engineers_shield"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

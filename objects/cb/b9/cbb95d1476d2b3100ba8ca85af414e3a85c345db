@@ -1,0 +1,1423 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thermal_expansion"
+	group: ""
+	icon: "thermal:machine_pulverizer"
+	id: "413122302275DDBD"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Thermal Expansion is a tech mod for Minecraft. It adds blocks, machines, and gadgets that allow players to automate tasks, process items and fluids, generate Redstone Flux, and store items, fluids, and energy. Players can use these blocks and machines from early on in the game."
+				""
+				"Thermal expansion is a physical property that describes how an object increases in size when heated. When an object is heated, its molecules move faster on average, causing them to take up more space"
+			]
+			disable_toast: true
+			id: "55EE3478C436A084"
+			rewards: [
+				{
+					id: "116305DE2CC4D0B7"
+					item: {
+						Count: 1
+						id: "thermal:wrench"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "20DA8FDCEB024AE6"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "thermal:guidebook"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "66F61721FC579304"
+				title: "Welcome to Thermal Expasion!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["55EE3478C436A084"]
+			description: [
+				"These quests cover the machines in Thermal Expansion."
+				""
+				"Machines generally process things into other things and require Redstone Flux (RF) to operate."
+				""
+				"Machines use power, in the form of Redstone Flux (RF), to process items and/or fluids. The other entries in this chapter will provide detailed explanations on the function of each one. Brief descriptions are available in a collapsible panel in the GUI of each block. Unupgraded machines use up to 20 RF/t."
+				""
+				"In order to improve or modify various aspects of their functionality, machines accept augments in the 'Augment' panel. The 'Redstone Control' and 'Configuration' panels set the redstone behavior and side configuration of the machine. By default, machines will work regardless of redstone signal and come with a blank side configuration when first placed, meaning no sides will accept items or fluids."
+				""
+				"In the 'Configuration' panel, each side of the block is represented by a square that will cycle through configurations when clicked. Blue and orange represent input and output, respectively. The arrow buttons configure automatic transfer to/from adjacent inventories. Black means that the side will accept in/outputs, but will not automatically transfer. Side configurations are saved when the block is picked up."
+				""
+				"The 'Energy' panel offers RF information on the block, such as current RF usage. Every machine has a maximum rate it can use RF, and every recipe a certain RF cost associated with it. These two values, which may be affected by augments, can be divided to determine the speed a given recipe will be processed. In order to speed up a machine's operation, either the max RF usage can be increased using certain augments or the RF needed for a recipe can be decreased using catalysts."
+			]
+			icon: "thermal:tin_gear"
+			id: "257DC24AF97A6F22"
+			tasks: [{
+				id: "317C09767418F0C1"
+				type: "checkmark"
+			}]
+			title: "Thermal Machines"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55EE3478C436A084"]
+			description: [
+				"These quests cover the devices in Thermal Expansion."
+				""
+				"Devices normally do not require RF unless explicitly stated."
+				""
+				"Devices perform various functions on blocks around them, some of which may take RF. In order to improve or modify various aspects of their functionality, devices accept augments."
+				""
+				"The other entries in this chapter will provide detailed explanations on the function of each block. Brief descriptions are available in a collapsible panel in the GUI of each block. Another panel offers RF information on the block when applicable, such as current and max RF usage. There are also augment and redstone control panels for organizing augments and response to redstone signals respectively."
+			]
+			icon: "thermal:copper_gear"
+			id: "2401C5F7A87D8070"
+			tasks: [{
+				id: "46E07B80EA208D07"
+				type: "checkmark"
+			}]
+			title: "Thermal Devices"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Advanced Refinery is a machine that refines fluids."]
+			id: "3C6B013C5E542BF2"
+			rewards: [{
+				ftb_money: 10L
+				id: "0D335EBF7C3E0B76"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "4352A996448A9C50"
+				item: "thermal_extra:advanced_refinery"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: [
+				"The Alchemical Imbuer is a machine that brews potions."
+				""
+				"Creats potion fluid, as opposed to brewing directly in a bottle. One ingredient is enough to brew one potion bucket, which can fill 4 bottles."
+			]
+			id: "6144766178795AD0"
+			rewards: [{
+				ftb_money: 10L
+				id: "59C301BA0BBE4609"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "4F2A37D607FA4B8A"
+				item: "thermal:machine_brewer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Blast Chiller is a machine that cools down and crystallizes liquids such as water and molten metals into their solid forms. Accepts various casts to alter the shape of the end product."]
+			id: "0D0B58E50EF86DAB"
+			rewards: [{
+				ftb_money: 10L
+				id: "1CFA362002A949CD"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "5B7126670057827B"
+				item: "thermal:machine_chiller"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Centrifugal Separator is a machine that separates items into their components. For example, alloy blends turn into their base metal dusts. It is also efficient at extracting dyes from flowers."]
+			id: "02D29CAF91F5D88B"
+			rewards: [{
+				ftb_money: 10L
+				id: "0F50496416F98D34"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "7E44434AAE0AB132"
+				item: "thermal:machine_centrifuge"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Component Assembly is a machine that craft machine components."]
+			id: "1B646CB723A6391E"
+			rewards: [{
+				ftb_money: 10L
+				id: "2A46CB59A773FF84"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "3E003C1A74693AC5"
+				item: "thermal_extra:component_assembly"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Crystallizer is a machine that creates crystals from base components and a fluid."]
+			id: "1FACAA403C88F83A"
+			rewards: [{
+				ftb_money: 10L
+				id: "3F93E71615F9B9F7"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "32DD72BD1FC0BE0D"
+				item: "thermal:machine_crystallizer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Endothermic Dehydrator is a machine that dehydrate items and fluids."]
+			id: "3469D345E2B4B427"
+			rewards: [{
+				ftb_money: 10L
+				id: "6D89B5DD4AAC53B6"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "73217580523794C7"
+				item: "thermal_extra:endothermic_dehydrator"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Fluid Encapsulator is a machine that fills items that hold fluids, such as buckets and bottles. Can be used to automatically fill bottles with potion fluid from the Alchemical Imbuer."]
+			id: "3AF5436AD90A2ED9"
+			rewards: [{
+				ftb_money: 10L
+				id: "54CF5F86C91FD296"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "143EEF49D8A66B1B"
+				item: "thermal:machine_bottler"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Fluid Mixer is a machine that mixes two fluids together."]
+			id: "35AD03D941FC0DFA"
+			rewards: [{
+				ftb_money: 10L
+				id: "2124CF25A81B7FEE"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "65D1FCDA4DB9CA76"
+				item: "thermal_extra:fluid_mixer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Fractionating Still is a machine refines fluids such as Resin and Sap."]
+			id: "6AB53E536AA26EAB"
+			rewards: [{
+				ftb_money: 10L
+				id: "209596F501926165"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "69C0FAD4D7A354D1"
+				item: "thermal:machine_refinery"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Induction Smelter is a machine that smelts multiple items together, producing alloys. It can also smelt ores into ingots and gems, which is affected by catalysts. Smelting ores has a chance to produce rich slag as a secondary output, which can be used as a catalyst or to make Phyto-Gro. Smelting gravel yields flint and slag."]
+			id: "350CC0684B27E5BB"
+			rewards: [{
+				ftb_money: 10L
+				id: "08A4971409FDC8B4"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "04A16A3379612D5E"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Magma Crucible is a machine that melts items into fluids."]
+			id: "3ECA3AC5A075C221"
+			rewards: [{
+				ftb_money: 10L
+				id: "143947D68FC29C21"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "329C3B7B2105CA69"
+				item: "thermal:machine_crucible"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Multiservo Press is a machine that can accept a variety of dies in order to shape metals into different forms and (un)pack blocks and items."]
+			id: "68DA57C68519B221"
+			rewards: [{
+				ftb_money: 10L
+				id: "46D70164B67C3775"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "7330AC10FAC7DF9D"
+				item: "thermal:machine_press"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Nitratic Igniter is a machine that uses various tnt to detonate items into new items. Drops can be increased using augments and better catalysts. Nitratic Igniter recipes REQUIRE a catalyst."]
+			id: "1BBDCB24BAD90453"
+			rewards: [{
+				ftb_money: 10L
+				id: "2011348A2C079BBF"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "53FE4D46578B304A"
+				item: "thermal_extra:nitratic_igniter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Phytogenic Insolator is a machine that uses RF, water, and optionally fertilizer in order to grow crops, flowers, and trees."]
+			id: "02A051F4646041F7"
+			rewards: [{
+				ftb_money: 10L
+				id: "1B4EA61FE1D21F3A"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "4E680E08BE2FCED2"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Pulverizer is a machine that crushes items and ores. Improves ore yields, which can be further increased using augments and catalysts."]
+			id: "773D6CDAB7406FB9"
+			rewards: [{
+				ftb_money: 10L
+				id: "218E9337E0A97E4A"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "61B55C460D24EABB"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Redstone Furnace is a machine that smelts your items like a traditional furnace."]
+			icon: "thermal:machine_furnace"
+			id: "5968388571F3BE0E"
+			rewards: [{
+				ftb_money: 10L
+				id: "448D23C1D9580066"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "107DFB1B4402CC2B"
+				item: "thermal:machine_furnace"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Pyrolyzer is a machine that decomposes substances in a low-oxygen environment using heat. Typically used to convert organic matter and coal into cleaner, longer-lasting fuels."]
+			id: "5E50F0593047803A"
+			rewards: [{
+				ftb_money: 10L
+				id: "6B44E8F1E9D5B8CB"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "3A537C86D71187D3"
+				item: "thermal:machine_pyrolyzer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["55EE3478C436A084"]
+			description: [
+				"These quests cover the power generation mechanic in Thermal Expansion dynamos and boilers."
+				""
+				"Dynamos produce RF from various types of fuel. They have a coil side, which is indicated by the large red nub that glows when the dynamo is generating. RF is output from the coil side only, and fuel is accepted from any of the other sides. Without any upgrades, dynamos produce up to 40 RF/t"
+				""
+				"Boilers are just like Dynamos in a sense when they produce RF, but they do not produce it directly. They instead produce steam which can be piped into any Steam generating RF method, such as Thermal's own Steam Dynamo."
+				""
+				"Dynamos / Boilers have an internal buffer which can be upgraded using integral components but not RF coil augments. Dynamos and Boilers will automatically throttle their RF output and fuel usage based on how full this buffer is. When empty, dynamos will work at their maximum RF output. When full, dynamos will work at 10% output, using fuel even though the RF generated is wasted. The buffer will only automatically output when the dynamo is generating, and will gradually decay when idle."
+			]
+			icon: "thermal:lead_gear"
+			id: "742867708FD7BBCB"
+			tasks: [{
+				id: "3310042DE2BC125B"
+				type: "checkmark"
+			}]
+			title: "Thermal Dynamos"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Sawmill is a machine that cuts logs into planks more efficiently than crafting. It produces Sawdust as a byproduct."]
+			id: "094325C2061EE287"
+			rewards: [{
+				ftb_money: 10L
+				id: "1BCB79FCDB55C449"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "39C7EA0DA50202FD"
+				item: "thermal:machine_sawmill"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["257DC24AF97A6F22"]
+			description: ["The Sequential Fabricator is a machine that automatically crafts items. Once the recipe in the crafting grid is set, it will take items and liquids from its internal inventory and craft them. Recipes that take a bucket of a particular fluid and leave an empty bucket behind can be crafted using liquid from the internal tank instead."]
+			id: "55901CE802DF5490"
+			rewards: [{
+				ftb_money: 10L
+				id: "6615776555E7CD4E"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "71E1D2D1545D084E"
+				item: "thermal:machine_crafter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Compression Dynamo uses burnable liquid fuels such as tree oil to produce RF."]
+			id: "0849AD92825A3A7C"
+			rewards: [{
+				ftb_money: 10L
+				id: "0998D2BE4C5406DF"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "6C438AD21917D677"
+				item: "thermal:dynamo_compression"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Disenchantment Dynamo uses enchanted items such as books to produce RF."]
+			id: "448B3DBEE62E398C"
+			rewards: [{
+				ftb_money: 10L
+				id: "7E8AC1FEC7545D2D"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "2F08EB9983C77DF4"
+				item: "thermal:dynamo_disenchantment"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Frost Dynamo uses cold items such as ice or snow to produce RF."]
+			id: "3F21793D7146C05C"
+			rewards: [{
+				ftb_money: 10L
+				id: "70FEA7C17F777CF7"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "2F926D7A3E478FE5"
+				item: "thermal_extra:dynamo_frost"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Gourmand Dynamo uses food to produce RF."]
+			id: "101D6E0BE856F046"
+			rewards: [{
+				ftb_money: 10L
+				id: "627CDC0F63814755"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "25AD7A4153134C95"
+				item: "thermal:dynamo_gourmand"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Compression Dynamo uses burnable liquid fuels such as tree oil to produce steam."]
+			id: "0BB00D47C2204DCF"
+			rewards: [{
+				ftb_money: 10L
+				id: "5167DD94F4F6BCDE"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "1FF92624BE97FF80"
+				item: "systeams:compression_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Disenchantment Dynamo uses enchanted items such as books to produce steam."]
+			id: "153F6F47DB5133A5"
+			rewards: [{
+				ftb_money: 10L
+				id: "5280EBE0A68C4ED1"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "336C58A96B32E999"
+				item: "systeams:disenchantment_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Frost Dynamo uses cold items such as ice or snow to produce steam."]
+			id: "339C5CDA79B63A31"
+			rewards: [{
+				ftb_money: 10L
+				id: "3982E552FF57FCBC"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "5F86579F8337F7E3"
+				item: "systeams:frost_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Gourmand Dynamo uses food to produce steam."]
+			id: "6162727CA6606426"
+			rewards: [{
+				ftb_money: 10L
+				id: "70F485F668EE93FE"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "024819F302AE95F3"
+				item: "systeams:gourmand_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Lapidary Dynamo uses crystals and gems to produce RF."]
+			id: "60BD1D747DD65003"
+			rewards: [{
+				ftb_money: 10L
+				id: "197FD5C218AE09CF"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "64F21146813493AA"
+				item: "thermal:dynamo_lapidary"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Magmatic Dynamo uses lava to produce RF."]
+			id: "02F0AD04B47B86C7"
+			rewards: [{
+				ftb_money: 10L
+				id: "43FE9362C64FE6CF"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "003B2BAFC03D6415"
+				item: "thermal:dynamo_magmatic"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Magmatic Dynamo uses lava to produce steam."]
+			id: "035116AC76AC59BB"
+			rewards: [{
+				ftb_money: 10L
+				id: "7F45A6E2CF253622"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "329E4540AAAE0DEC"
+				item: "systeams:magmatic_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Lapidary Dynamo uses crystals and gems to produce steam."]
+			id: "268FE52B41ED943C"
+			rewards: [{
+				ftb_money: 10L
+				id: "6D6AF84827C8F50E"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "0BCE9725A7C2007A"
+				item: "systeams:lapidary_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Numismatic Dynamo uses metal pressed coins to produce RF."]
+			id: "3CEA4AEB476EA725"
+			rewards: [{
+				ftb_money: 10L
+				id: "204436C1C0CD263D"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "113F72E993F07418"
+				item: "thermal:dynamo_numismatic"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Numismatic Dynamo uses metal pressed coins to produce steam."]
+			id: "7ED597621AFF709E"
+			rewards: [{
+				ftb_money: 10L
+				id: "1CA15D04C7B09C05"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "33E3778BE27FE3DE"
+				item: "systeams:numismatic_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Stirling Dynamo uses burnable items to produce RF."]
+			id: "55D9B9E24AA7B863"
+			rewards: [{
+				ftb_money: 10L
+				id: "3AFE80676D2F2A77"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "27153926A939B68A"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Stirling Dynamo uses burnable items to produce steam."]
+			id: "79AAFDBB98690315"
+			rewards: [{
+				ftb_money: 10L
+				id: "163F8C351514D698"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "7C6D2838AB53265F"
+				item: "systeams:stirling_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["742867708FD7BBCB"]
+			description: ["The Steam Dynamo uses steam to produce RF."]
+			id: "7FDA4DE5CB40F978"
+			rewards: [{
+				ftb_money: 10L
+				id: "594DDE22FF9657D6"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "7F14D03184D703EB"
+				item: "systeams:steam_dynamo"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: [
+				"The Aquatic Entangler is a device that can passively catch fish when it is placed in a body of water. The rate at which it catches fish depends on the biome, weather, and augment configuration, but it has a base rate of 1 catch every few minutes. Integral Components and Radial Enhancement can speed this up. It can optionally take bait to boost its rate or alter which items it catches."
+				""
+				"The entangler will also net (pun intended) 1-3 exp for every catch if the Knowledge Concentrator augment is installed.\""
+			]
+			id: "007660BC16DC4097"
+			rewards: [{
+				ftb_money: 10L
+				id: "38482C0BF3DC2857"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "427BA0CE5ECF7D90"
+				item: "thermal:device_fisher"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: ["The Batch Composter is a more advanced version of the Composter. It can compost multiple items at once and produces Compost rather than Bone Meal. It will also generate XP when a Knowledge Concentractor augment is installed."]
+			id: "3C79C4D6AB2FB9F2"
+			rewards: [{
+				ftb_money: 10L
+				id: "0DE3BA1CA90A46FB"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "4C89FED08B5FB0D0"
+				item: "thermal:device_composter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: ["The Arboreal Extractor is a device that extracts fluid from an adjacent tree. Can optionally take fertilizer to boost production rate. Bonemeal boosts output by 1.5x for 8 cycles, while Phyto-Gro boosts by 2.0x for 16 cycles. Different trees produce different fluids; use JEI to see the available recipes."]
+			id: "0A5EAE1BE05B0D4E"
+			rewards: [{
+				ftb_money: 10L
+				id: "3EAAA332E69CEBA8"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "49773DB5CC0198FF"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: ["The Decoctive Diffuser is a device that will periodically consume potion fluid to spread potion effects to nearby mobs. Effects granted this way last 1/4 as long compared to a regular potion. It automatically halts operation when no mobs are in its area of effect. At base, the diffuser spreads potion effects in a 9x9x9 area centered on it, which can be augmented up to 15x15x15 using Radial Enhancement augments."]
+			id: "11225EDDB21F0883"
+			rewards: [{
+				ftb_money: 10L
+				id: "3E461C0BD07A4133"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "0425F6F946136A29"
+				item: "thermal:device_potion_diffuser"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: [
+				"The Igneous Extruder is a device that will generate infinite stone when surrounded with the appropriate blocks and fluids. It requires an adjacent lava source block and an adjacent coolant block; it can optionally take a block underneath. Refer to JEI for all the available recipes."
+				""
+				"At first, it will produce 1 block per second, but this can be augmented up to 4/sec using Integral Components If the recipe is changed, any blocks in the output slot will be voided to make room for the blocks from the new recipe."
+			]
+			id: "33D511AAD88B9A6E"
+			rewards: [{
+				ftb_money: 10L
+				id: "7943B93F92874724"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "22F6D339801E99A2"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: ["The Hive Hopper is a device that can extract honeycombs and liquid honey when placed under a beehive."]
+			id: "1E80DBC04541DC6B"
+			rewards: [{
+				ftb_money: 10L
+				id: "00CA09309717EA0C"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "528EC081C311596F"
+				item: "thermal:device_hive_extractor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: ["The Aqueous Accumulator is a device that will generate infinite water for your needs. In order for it to produce water there must be at least two source blocks adjacent to the sides of the device. Source blocks above or below the device will not count."]
+			id: "108AB4E33F9D5B1B"
+			rewards: [{
+				ftb_money: 10L
+				id: "275D2ED61909E540"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "30B18A33573013A4"
+				item: "thermal:device_water_gen"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: [
+				"The Insightful Condenser is a device that can collect experience from nearby blocks which have stored it internally using a Knowledge Concentrator. It then converts that experience to liquid form. At base, it collects in a 5x5x5 area centered on it, which can be increased using Radial Enhancement augments."
+				""
+				"When controlled via redstone signal, the Insightful Condenser will immediately collect the moment it is turned on. This way, it will always reliably activate when pulsed."
+			]
+			id: "21153973F2EDFEF5"
+			rewards: [{
+				ftb_money: 10L
+				id: "6534CC6D4E189379"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "1CC90C73F69E502E"
+				item: "thermal:device_xp_condenser"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: [
+				"The Nullifier is a device that can void all items and fluids that are inserted into it. Items/fluids that are input automatically (via e.g. hoppers) are instantly voided, while items inserted manually through the GUI are temporarily stored until the trash button is pressed. It is compatible with filter type augments to restrict what it can accept."
+				""
+				"Redstone control only affects the automatic insertion of items/fluids. Manual deletion through the GUI can always be performed, regardless of redstone control setting."
+			]
+			id: "5E2D69E0B74C15C3"
+			rewards: [{
+				ftb_money: 10L
+				id: "784249FD80E00A23"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "6BEC8665EB03ACE5"
+				item: "thermal:device_nullifier"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: ["The Magmatic Accumulator is a device that generates lava when touching 2 lava source blocks. The Magmatic Accumulator will generate lava at a rate of 10mb/t. It will generate lava at a rate 40mb/t in the nether."]
+			id: "771D1D7E2B8D6421"
+			rewards: [{
+				ftb_money: 10L
+				id: "6903AA481DE304DA"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "2B48722D4E4F5C60"
+				item: "thermal_extra:device_lava_gen"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: ["The Phyto-Soil Infuser is a device that uses RF in order to speed up the growth of crops on nearby Phyto-Soil. In its base form, it infuses a 3x3x3 area around it, which can be upgraded using Radial Enhancement augments to up to 7x3x7. Integral Components increase the growth boost effect."]
+			id: "25CCEFD72D469472"
+			rewards: [{
+				ftb_money: 10L
+				id: "0F2DF0F69003D5A7"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "6CBBA795281644C6"
+				item: "thermal:device_soil_infuser"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: ["The Energetic Infuser is a block that can be used to charge up to 9 items at once. Its main benefits over the Tinker's Bench are faster charging speeds and that items can be automatically inserted and extracted (e.g. with a hopper)."]
+			id: "05D36DE86B0BCB14"
+			rewards: [{
+				ftb_money: 10L
+				id: "4A034772459D1CA7"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "51C88238CB668725"
+				item: "thermal:charge_bench"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: [
+				"The Redstone Flux Cell can be used to store and distribute Redstone Flux (RF). Each side can be configured to in/output energy, and the cell can be configured to auto-input/output. The RF cell starts with 1,000,000RF storage capacity and 1,000rf/t max in/out, which can be improved using augments. Provides a comparator output proportional to how full it is."
+				""
+				"The transfer rate of the RF cell can be precisely configured. In the GUI, on both sides of the RF gauge, are the input and output transfer rates. These can be set manually using the '+' and '-' buttons in order to precisely control the rate of RF transfer. Left/right clicking will change the rate by 50/10 rf per tick. Ctrl-clicking changes the rate by 5/1. Shift-clicking will instead change the rate by 1000/100. Ctrl-shift-clicking changes the rate by 10k/1k."
+			]
+			id: "798E789303948B43"
+			rewards: [{
+				ftb_money: 10L
+				id: "54E315A0DABBFD72"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "05AAB6DDB4494102"
+				item: {
+					Count: 1
+					id: "thermal:energy_cell"
+					tag: {
+						BlockEntityTag: {
+							Energy: 0
+							EnergyMax: 1000000
+							EnergyRecv: 1000
+							EnergySend: 1000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: [
+				"The Fluid Cell can be used to store and distribute fluids. The fluid cell starts with 32,000mb of capacity and 8,000mb/t max in/out rate, which can be improved using augments. It can only store one fluid at a time. Each side can be configured to in/output, and the cell can be configured to auto-input/output. Provides a comparator output proportional to how full it is."
+				""
+				"The transfer rate of the fluid cell can be precisely configured. In the GUI, on both sides of the fluid gauge, are the input and output transfer rates. These can be set manually using the '+' and '-' buttons in order to precisely control the rate of fluid transfer. Left/right clicking will change the rate by 50/10 mb per tick. Ctrl-clicking changes the rate by 5/1. Shift-clicking will instead change the rate by 1000/100. Ctrl-shift-clicking changes the rate by 10k/1k."
+				""
+				"The Fluid cell can be right clicked with buckets to fill or empty it one bucket at a time. Beware that there is currently a bug with Forge where trying to bucket a non-bucketable fluid voids your bucket!"
+			]
+			id: "57F8FE875265880E"
+			rewards: [{
+				ftb_money: 10L
+				id: "3D39F8D20002DC36"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "729B346291BF1E70"
+				item: {
+					Count: 1
+					id: "thermal:fluid_cell"
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								Amount: 0
+								Capacity: 32000
+								FluidName: "minecraft:empty"
+								Tank: 0b
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: ["The Vacuumulator is a device that can pick up items in its area of effect. It can pick up XP Orbs when a Knowledge Concentrator augment is installed. At base, the Vacuumulator collects in a 9x9x9 area with an offset center. This can be improved using Radial Enhancement augments."]
+			id: "5F0A1B1826B725C2"
+			rewards: [{
+				ftb_money: 10L
+				id: "524043B7174BDA81"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "4A68473F11F2D71B"
+				item: "thermal:device_collector"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2401C5F7A87D8070"]
+			description: ["The Tinker's Workbench is a block that can charge, fill, and apply augments to tools and blocks. It has two modes, charge/refill and augment, which you can toggle between using the button below the item slot in the GUI. Augments are only fully installed when you toggle modes or take the tool/block out."]
+			id: "04E391D40273A61C"
+			rewards: [{
+				ftb_money: 10L
+				id: "7BDD5D6D8C5FB0D0"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "4381034BBCDF4BF7"
+				item: "thermal:tinker_bench"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["55EE3478C436A084"]
+			icon: "thermal:gold_gear"
+			id: "140B3E194F8B79F1"
+			tasks: [{
+				id: "09AE8A60557B3C2F"
+				type: "checkmark"
+			}]
+			title: "Integral Components"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["140B3E194F8B79F1"]
+			id: "7B1228D863562821"
+			rewards: [{
+				ftb_money: 10L
+				id: "47796FD29998B324"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "5EA1D1B374FF3FCC"
+				item: "thermal:upgrade_augment_1"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B1228D863562821"]
+			id: "3A0712BC6DB16ED6"
+			rewards: [{
+				ftb_money: 10L
+				id: "4A573A566CAB5F90"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "104E9246707D87BC"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3A0712BC6DB16ED6"]
+			id: "2DED5F2E8EC50401"
+			rewards: [{
+				ftb_money: 10L
+				id: "51169CB80CB358AA"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "16AF977852A2C298"
+				item: "thermal:upgrade_augment_3"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2DED5F2E8EC50401"]
+			id: "7394E5EE8FC7B733"
+			rewards: [{
+				ftb_money: 10L
+				id: "42D239F5E5151B37"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "27FF385CD79757B0"
+				item: "thermal_extra:upgrade_augment"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7394E5EE8FC7B733"]
+			id: "22C764012D31BA8A"
+			rewards: [{
+				ftb_money: 10L
+				id: "301EB40DBE4E2974"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "0C161A7D4DDF2D1F"
+				item: "thermal_extra:abyssal_upgrade_augment"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["55EE3478C436A084"]
+			icon: "thermal:nickel_gear"
+			id: "5E3DA327CF067D4A"
+			tasks: [{
+				id: "48A15833E86A9917"
+				type: "checkmark"
+			}]
+			title: "Thermal Equipment"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E3DA327CF067D4A"]
+			description: ["Used to store and imbue arrows with potion effects. Right click with the quiver in your hand to transfer arrows from your inventory into the quiver. Press the CoFH Change Mode Key to toggle imbuement, which takes 50mb of the stored potion fluid per arrow. The quiver can be filled and augmented in the Tinker's Workbench."]
+			id: "52D2C6D3DD0D2F21"
+			rewards: [{
+				ftb_money: 10L
+				id: "5EB8E6759A96E611"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "1F7BA137EC5788F5"
+				item: {
+					Count: 1
+					id: "thermal:potion_quiver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5E3DA327CF067D4A"]
+			description: ["Stores RF and charges items in your inventory. It has 3 modes, allowing you to charge just your hotbar and armor, just your inventory, or everything, togglable using the change mode keybind. In order to toggle item charging on and off, shift right click while holding the capacitor. It can also be used to put energy in machines. It can be charged and augmented in the Tinker's Workbench."]
+			id: "3A678F8DBDC25C17"
+			rewards: [{
+				ftb_money: 10L
+				id: "23ED698D7EAE5EB4"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "2BF75DFB889EA259"
+				item: {
+					Count: 1
+					id: "thermal:flux_capacitor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5E3DA327CF067D4A"]
+			description: ["Uses RF to mine stone- and dirt-type blocks efficiently. It can be charged and augmented in the Tinker's Workbench. A reinforced or higher integral component is needed to mine obsidian. After installing radius augments, press the CoFH Mode Change Key to swap between mining radii. It can be enchanted with Holding to improve RF capacity."]
+			id: "3BDDED6E9EF25B6B"
+			rewards: [{
+				ftb_money: 10L
+				id: "2FCFEB0E8B039FC2"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "15685C7CE03E0326"
+				item: {
+					Count: 1
+					id: "thermal:flux_drill"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5E3DA327CF067D4A"]
+			description: ["The FluxoMagnet is a tool that uses RF in order to pull nearby items into the player's inventory. Right clicking with it in hand will suck nearby items in. Press the CoFH Mode Change Key to toggle auto-attract mode where items are nearby items are automatically pulled in. It can be charged and augmented in the Tinker's Workbench."]
+			id: "7F7F17F86082A36D"
+			rewards: [{
+				ftb_money: 10L
+				id: "574E29B57E3AFAB5"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "29A4AD58B0E40C6B"
+				item: {
+					Count: 1
+					id: "thermal:flux_magnet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5E3DA327CF067D4A"]
+			description: ["Uses RF to mine wood-type blocks with ease. Right click strips wood logs as usual. It can be charged and augmented in the Tinker's Workbench. After installing radius augments, press the CoFH Mode Change key  to change between mining radii. It can be enchanted with Holding to improve RF capacity."]
+			id: "1EB6F26734FE3BCB"
+			rewards: [{
+				ftb_money: 10L
+				id: "427673775B485F0D"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "21D87DEA2A298B82"
+				item: {
+					Count: 1
+					id: "thermal:flux_saw"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5E3DA327CF067D4A"]
+			description: ["Portable XP Storage! The Insightful Crystal can hold 10K exp, equivalent to about 63 levels. This can be increased by enchanting it with Holding."]
+			id: "389085EF5004FC5B"
+			rewards: [{
+				ftb_money: 10L
+				id: "6996512644202965"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "0A86256E921E822E"
+				item: {
+					Count: 1
+					id: "thermal:xp_crystal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5E3DA327CF067D4A"]
+			description: [
+				"Holds a moderate quantity of fluid and allows for it to be dispensed. Press '$(k:cofh.mode_change_increment)' to toggle Empty/Fill mode. Use while sneaking to activate or deactivate automatic replenishment of most other held (or worn) fluid containers. It can be filled with fluid and augmented in the Tinker's Workbench."
+				""
+				"It can be enchanted with Holding to improve fluid capacity."
+			]
+			id: "399802FFB40238E1"
+			rewards: [{
+				ftb_money: 10L
+				id: "1F00A2610602AD72"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "19EA59D820DB1CDE"
+				item: {
+					Count: 1
+					id: "thermal:fluid_reservoir"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5E3DA327CF067D4A"]
+			description: [
+				"Used to infuse yourself, mobs, or other players with potion effects. Press the CoFH Mode Change Key to toggle automatic infusion, which regularly infuses you with small doses. It can be filled with potion fluid and augmented in the Tinker's Workbench."
+				""
+				"It can be enchanted with Holding to improve fluid capacity."
+			]
+			id: "667BC521CFB889CC"
+			rewards: [{
+				ftb_money: 10L
+				id: "27934F6D4521F388"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "4351A21FAFCCB6CE"
+				item: {
+					Count: 1
+					id: "thermal:potion_infuser"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5E3DA327CF067D4A"]
+			description: [
+				"The Satchel is a bag that can hold things. It's pretty straightforward. Press the CoFH Mode Change Key to toggle auto-collect mode, where items are automatically stored on pickup, depending on Filter restrictions. It can be augmented in the Tinker's Workbench."
+				""
+				"It can be dyed in a Crafting Table with any normal dyes, and/or secured with a Signalum Security Lock."
+			]
+			id: "25734F2F28A0ED34"
+			rewards: [{
+				ftb_money: 10L
+				id: "04385C75011757A7"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "3BB9839EF9D14F42"
+				item: {
+					Count: 1
+					id: "thermal:satchel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5E3DA327CF067D4A"]
+			description: ["Uses to water crops to accelerate their growth. It can be filled and augmented in the Tinker's Workbench. After installing radius augments, press to change between watering radii. It can be enchanted with to improve water capacity."]
+			id: "02CC1A0BBFF38EDD"
+			rewards: [{
+				ftb_money: 10L
+				id: "7ADB7D9D800C9699"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "36939B1CDD40E3F3"
+				item: {
+					Count: 1
+					id: "thermal:watering_can"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5E3DA327CF067D4A"]
+			description: ["The detonator is used to prime, and then detonate up to 16 explosive blocks at once! First place all your explosives, then right click each one with the detonator. The light will turn yellow to indicate that at least 1 explosive has been primed. The mode can then be changed to detonate, at which point the light will turn green and another right click will detonate all primed explosives."]
+			id: "1571DE63E9DC3B98"
+			rewards: [{
+				ftb_money: 10L
+				id: "1A070589041038C2"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "2BF5C28A87B47E18"
+				item: {
+					Count: 1
+					id: "thermal:detonator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+	]
+	title: "Thermal Expansion"
+}

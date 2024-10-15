@@ -1,0 +1,15 @@
+ServerEvents.tags('item', event => {
+  event.remove('forge:ingots/iron', 'betternether:cincinnasite_ingot')
+  event.remove('forge:ingots/iron', 'betterend:thallasium_ingot')
+})
+
+ServerEvents.recipes(event => {
+  event.remove({id: 'extrastorage:disk_256k'})
+  event.remove({id: 'extrastorage:disk_1024k'})
+  event.remove({id: 'extrastorage:disk_4096k'})
+  event.remove({id: 'extrastorage:disk_16384k'})
+  event.remove({id: 'extrastorage:storagepart_256k'})
+  event.remove({id: 'extrastorage:storagepart_1024k'})
+  event.remove({id: 'extrastorage:storagepart_4096k'})
+  event.remove({id: 'extrastorage:storagepart_16384k'})
+})

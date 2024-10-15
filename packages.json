@@ -1,0 +1,13 @@
+{
+  "minimumVersion" : 1,
+  "packages" : [
+    {
+      "title" : "Trails and Tales",
+      "name" : "Trails and Tales",
+      "version" : "1.0.10.0",
+      "javaRuntime" : "java-runtime-gamma",
+      "location" : "trails-and-tales.json",
+      "priority" : 0
+    }
+  ]
+}

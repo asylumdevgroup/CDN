@@ -1,0 +1,31 @@
+{
+	bestiaryTabs: [{
+		icon: {
+			id: "minecraft:air"
+			tag: {
+				Damage: 0
+				data_model: { }
+			}
+			Count: 0b
+		}
+		defaultBackground: 1b
+		tabID: [I;
+			672881073
+			419381761
+			-1293405643
+			842474532
+		]
+		renderTitle: 0b
+		title: ""
+		tabEntries: [ ]
+		background: {
+			id: "minecraft:air"
+			tag: {
+				Damage: 0
+				data_model: { }
+			}
+			Count: 0b
+		}
+		titleScale: 1.0d
+	}]
+}

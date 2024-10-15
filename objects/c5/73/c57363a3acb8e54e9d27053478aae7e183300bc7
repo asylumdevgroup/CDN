@@ -1,0 +1,1033 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "refined_storage"
+	group: ""
+	icon: "refinedstorage:creative_controller"
+	id: "1F83310CB673438C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Refined Storage is a mass storage mod for Minecraft that offers the player a network-based storage system, allowing them to store items and fluids on a massively expandable device network."]
+			id: "4BF14B6A70830C3F"
+			rewards: [
+				{
+					id: "3E38D7711A228162"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "refstoragemanual:guide"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "72449B363F6B8BF4"
+					item: "refinedstorage:wrench"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "700A0F869D8F9689"
+				type: "checkmark"
+			}]
+			title: "Welcome to Refined Storage"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4BF14B6A70830C3F"]
+			description: [
+				"Processor Binding is used to craft the various processors in Refined Storage."
+				""
+				"These are the chipsets that power Refined Stroage. Think of it like a AMD or Intel CPU that powers your PC.  Or Apple Silcion / Qualcomm if your a cool kid."
+			]
+			id: "2D9B6F7B0AF28891"
+			tasks: [{
+				count: 8L
+				id: "2F27D38AD8EAFE61"
+				item: "refinedstorage:processor_binding"
+				type: "item"
+			}]
+			title: "Processor Bindings"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2D9B6F7B0AF28891"
+				"796656618B83E208"
+			]
+			description: ["The Raw Basic Processor is used to craft a Basic Processor."]
+			id: "4A95AE32A31EEB02"
+			tasks: [{
+				id: "4C2AFB7E99B0A4EB"
+				item: "refinedstorage:raw_basic_processor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2D9B6F7B0AF28891"
+				"796656618B83E208"
+			]
+			description: ["The Raw Improved Processor is used to craft a Improved Processor."]
+			id: "6F5A9C77A4B7DC73"
+			tasks: [{
+				id: "23AFC3A340A2A5DA"
+				item: "refinedstorage:raw_improved_processor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2D9B6F7B0AF28891"
+				"796656618B83E208"
+			]
+			description: ["The Raw Advanced Processor is used to craft a Advanced Processor."]
+			id: "52BB3727C9BD9D08"
+			tasks: [{
+				id: "13430CDE4CA86464"
+				item: "refinedstorage:raw_advanced_processor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4A95AE32A31EEB02"]
+			description: ["The Basic Processor is used to craft the various Refined Storage devices."]
+			id: "565FDACD4FE3EF83"
+			tasks: [{
+				id: "6A558A7915F793B6"
+				item: "refinedstorage:basic_processor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F5A9C77A4B7DC73"]
+			description: ["The Improved Processor is used to craft the various Refined Storage devices."]
+			id: "208162468B0C8CCB"
+			tasks: [{
+				id: "6CCF48B04E233761"
+				item: "refinedstorage:improved_processor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["52BB3727C9BD9D08"]
+			description: ["The Advanced Processor is used to craft the various Refined Storage devices."]
+			id: "19153FA2DA92FD67"
+			tasks: [{
+				id: "380C3885A6BF3367"
+				item: "refinedstorage:advanced_processor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4BF14B6A70830C3F"]
+			description: [
+				"Quartz Enriched Iron is like the name says, iron enriched with quartz."
+				""
+				"It is used in almost all the recipes in Refined Storage."
+			]
+			id: "1F4F3FAEB799AE76"
+			tasks: [{
+				count: 4L
+				id: "45D0240EB36CC3D0"
+				item: "refinedstorage:quartz_enriched_iron"
+				type: "item"
+			}]
+			title: "Quartz Enriched Iron"
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["565FDACD4FE3EF83"]
+			description: ["The Construction Core is used in recipes for devices that turn resources from the storage network into resources in the world."]
+			id: "1054485EF3468B52"
+			size: 0.5d
+			tasks: [{
+				id: "1FF8D9C6BF95F455"
+				item: "refinedstorage:construction_core"
+				type: "item"
+			}]
+			x: -1.25d
+			y: 4.75d
+		}
+		{
+			dependencies: ["565FDACD4FE3EF83"]
+			description: ["The Destruction Core is used in recipes for devices that turn resources from the world into resources in the storage network."]
+			id: "1A26F18B8BB17DC5"
+			size: 0.5d
+			tasks: [{
+				id: "51FB2A7AC259B383"
+				item: "refinedstorage:destruction_core"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 4.75d
+		}
+		{
+			dependencies: [
+				"19153FA2DA92FD67"
+				"2C8B03142572E409"
+			]
+			description: [
+				"The Controller is the core of the Refined Storage network. You need to connect all the Refined Storage devices to this block."
+				""
+				"&b&lConnecting devices&r&r"
+				"You are supposed to connect every device that depends on the storage network connection to the Controller. You can connect devices with cables."
+				"Cables are not always necessary, as long as the devices are next to each other in any direction a connection will be established as well."
+				""
+				"&b&lEnergy&r&r"
+				"The Controller accepts and consumes Forge Energy (FE). Most mods have a way to generate energy, therefore Refined Storage doesn’t come by itself with a way to generate energy."
+				"- The energy is extracted per tick."
+				"- The amount of energy that is extracted depends on the amount of devices, and which devices."
+				"- Every device type consumes another amount of energy."
+				"- You can see how many energy each device consumes by right clicking the Controller."
+				""
+				"If the Controller runs out of energy, the network will be turned off until there is sufficient energy provided again. When the Controller is broken, it will maintain its energy."
+				""
+				"&b&lLimits&r&r"
+				"Each Refined Storage network can only have a single Controller. It doesn’t make sense to connect multiple controllers on the same network."
+				"If you connect another Controller to an already existing network, the Controller will break as an item in the world."
+				""
+				"&b&lRecoloring&r&r"
+				"You can recolor the Controller in 2 ways:"
+				"- Using a dye on the Controller"
+				"- Combining the block with a dye as a crafting recipe"
+			]
+			id: "7443D9DE4C87727C"
+			tasks: [{
+				id: "2390CF6459354D57"
+				item: "refinedstorage:controller"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.800000000000001d
+		}
+		{
+			dependencies: ["4BF14B6A70830C3F"]
+			description: [
+				"Silicon can be obtained by smelting quartz."
+				""
+				"This item has no use other than being used in crafting recipes."
+			]
+			id: "796656618B83E208"
+			tasks: [{
+				id: "0EB3770FB4904FBD"
+				item: "refinedstorage:silicon"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"19153FA2DA92FD67"
+				"2C8B03142572E409"
+			]
+			description: [
+				"The Disk Drive is the block in which you store storage disks or fluid storage disks."
+				""
+				"&l&bPriority&r&r"
+				"A (negative or positive) priority can be chosen (where a higher priority gets higher precedence to place items in)."
+				""
+				"&b&lWhitelist and blacklist&r&r"
+				"There is also a whitelist and blacklist to only allow or forbid some items or fluids from entering the storage disks or fluid storage disks respectively."
+				""
+				"The whitelist or blacklist can be configured to be NBT or damage sensitive."
+				""
+				"&b&lMode&r&r"
+				"The Disk Drive has support for the following modes:"
+				"- Insert and extract (default)"
+				"- Insert only"
+				"- Extract only"
+			]
+			id: "3335F948CC5DBCC9"
+			tasks: [{
+				id: "678CB2D0187AC4BF"
+				item: "refinedstorage:disk_drive"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.800000000000001d
+		}
+		{
+			dependencies: [
+				"1054485EF3468B52"
+				"1A26F18B8BB17DC5"
+				"208162468B0C8CCB"
+				"2C8B03142572E409"
+			]
+			description: [
+				"The Grid is a block that allows access to the items and fluids in the storage network."
+				""
+				"The player can extract items or fluids from the central "
+				"GUI."
+				""
+				"&l&bSizes&r&r"
+				"The size of any Grid can be configured as well:"
+				"- Stretched (default)"
+				"- Small"
+				"- Medium"
+				"- Large"
+				""
+				"&l&bTypes&r&r"
+				"The Grid can be configured to only show craftable items or only non-craftable items."
+				""
+				""
+				"&l&bRecoloring&r&r"
+				"You can recolor the Grid in 2 ways:"
+				"- Using a dye on the Grid"
+				"- Combining the block with a dye as a crafting recipe"
+			]
+			id: "6A3B853133A1CD2E"
+			tasks: [{
+				id: "3071FA424E8361EE"
+				item: "refinedstorage:grid"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.800000000000001d
+		}
+		{
+			dependencies: ["1F4F3FAEB799AE76"]
+			description: ["The Machine Casing is a block that is used to craft the various Refined Storage machines."]
+			id: "2C8B03142572E409"
+			tasks: [{
+				id: "5DF79656B4F6BEAD"
+				item: "refinedstorage:machine_casing"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.800000000000001d
+		}
+		{
+			dependencies: ["6A3B853133A1CD2E"]
+			description: [
+				"The Crafting Grid is the same as a regular Grid, but has a crafting inventory."
+				""
+				"When an item is crafted, it won’t just clear the crafting slots, but it’ll try to retrieve the same items from the storage network again."
+				""
+				"&b&lRecipe transferring&r&r"
+				"The Crafting Grid integrates with JEI (Just Enough Items) so the player can use recipe transferring."
+				""
+				"Refined Storage will warn you when you don’t have the required item present in your inventory, storage network or crafting matrix. Even with this warning, you can still transfer items."
+				""
+				"If you don’t have some required items, but autocrafting is available for said items, you can press CTRL + CLICK to start autocrafting for said items. Note that you need a Pattern configured for these items."
+				""
+				"&b&lRecoloring&r&r"
+				"You can recolor the Crafting Grid in 2 ways:"
+				"- Using a dye on the Crafting Grid"
+				"- Combining the block with a dye as a crafting recipe"
+			]
+			id: "7F50470AFADAF004"
+			size: 1.0d
+			tasks: [{
+				id: "06125AA66A02ECF6"
+				item: "refinedstorage:crafting_grid"
+				type: "item"
+			}]
+			x: -3.6999999999999997d
+			y: 5.800000000000001d
+		}
+		{
+			dependencies: ["6A3B853133A1CD2E"]
+			description: [
+				"The Fluid Grid is the same as a regular Grid, but is used for viewing fluids in the fluid storage of your storage network."
+				""
+				"&b&lInserting&r&r"
+				""
+				"To insert a fluid, players can shift click on a fluid container like a bucket in their player inventory while in the Fluid Grid GUI."
+				""
+				"The player can also click the fluid container in the GUI to insert it."
+				""
+				"&b&lExtracting&r&r"
+				"Players can extract the fluid by clicking on it. The Fluid Grid will then fill a bucket with the selected fluid."
+				""
+				"Refined Storage will first search an empty bucket in your inventory. If none is found, a bucket will be searched in your storage network."
+				""
+				"Some fluids cannot be filled in a bucket, then the only way to extract those fluids is by using an Exporter."
+				""
+				"&b&lRecoloring&r&r"
+				"You can recolor the Fluid Grid in 2 ways:"
+				"- Using a dye on the Fluid Grid"
+				"- Combining the block with a dye as a crafting recipe"
+			]
+			id: "3D10890AC9BC230F"
+			tasks: [{
+				id: "5F21782F417CDEDF"
+				item: "refinedstorage:fluid_grid"
+				type: "item"
+			}]
+			x: -3.6999999999999997d
+			y: 4.800000000000001d
+		}
+		{
+			dependencies: ["6A3B853133A1CD2E"]
+			description: [
+				"The Portable Grid is a portable storage that isn’t connected to a network. It allows you to interact with a storage disk while not being connected to a network."
+				""
+				"As soon as you insert a storage disk, you can access the contents of your storage disk in the grid view."
+				""
+				"It’s essentially a Disk Drive and Grid in one block or item. It can be placed in the world, or, be used as a handheld device as well."
+				""
+				"To place it in the world hold the Portable Grid while sneaking."
+			]
+			id: "1CC0802EDAF0B1F0"
+			tasks: [{
+				id: "0BEF5CC959B57ED2"
+				item: {
+					Count: 1
+					id: "refinedstorage:portable_grid"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.6999999999999997d
+			y: 6.800000000000001d
+		}
+		{
+			dependencies: [
+				"7671199115B85E05"
+				"208162468B0C8CCB"
+				"1A26F18B8BB17DC5"
+				"1054485EF3468B52"
+			]
+			description: [
+				"The External Storage is a block that provides the storage network with storage of the inventory or fluid tank in front of the device."
+				""
+				"&b&lPriority&r&r"
+				"A (negative or positive) priority can be chosen (where a higher priority gets higher precedence to place items "
+				"in)."
+				""
+				"&b&lWhitelist and blacklist&r&r"
+				"There is also a whitelist and blacklist option to only allow or forbid some items or fluids from entering the connected inventory."
+				""
+				"The whitelist or blacklist can be configured to be NBT or damage sensitive."
+				""
+				"&b&lMode&r&r"
+				"The External Storage has support for the following modes:"
+				"- Insert and extract (default)"
+				"- Insert only"
+				"-E xtract only"
+			]
+			id: "6A08DEB6F81F9D40"
+			tasks: [{
+				id: "21342607372EA705"
+				item: "refinedstorage:external_storage"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.800000000000001d
+		}
+		{
+			dependencies: ["1F4F3FAEB799AE76"]
+			description: [
+				"Cables are used to connect devices to the Controller."
+				""
+				"They are not always necessary, as long as the devices are next to each other in any direction a connection will be established as well."
+			]
+			id: "7671199115B85E05"
+			tasks: [{
+				count: 12L
+				id: "099EE04398B94B5E"
+				item: "refinedstorage:cable"
+				type: "item"
+			}]
+			title: "Cables"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2C8B03142572E409"]
+			description: [
+				"The Detector is a block that emits a redstone signal if an item, or fluid count matches a given amount."
+				""
+				"It is also possible to be NBT or damage sensitive."
+				""
+				"&b&lTypes of criteria&r&r"
+				"- < (emits a signal when lower than the amount)"
+				"- > (emits a signal when greater than the amount)"
+				"- = (emits a signal when equal to the given amount)"
+				""
+				"&b&lChecking the total count in the storage&r&r"
+				"When no item/fluid, is specified, the criteria won’t care about the count of a specific item/fluid, but rather the count of all items/fluids, in the storage."
+				"Amounts in fluid mode"
+				""
+				"When the Detector is in fluid mode, the amount given is in millibuckets (mB)."
+				""
+				"If you want to check for 1 bucket of a fluid, use 1000, not 1."
+				""
+				"&b&lRecoloring&r&r"
+				"You can recolor the Detector in 2 ways:"
+				"- Using a dye on the Detector"
+				"- Combining the block with a dye as a crafting recipe"
+			]
+			id: "3B143EABD43B79C6"
+			tasks: [{
+				id: "755D34EE545F0049"
+				item: "refinedstorage:detector"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.300000000000001d
+		}
+		{
+			dependencies: [
+				"2C8B03142572E409"
+				"7671199115B85E05"
+			]
+			description: [
+				"The Relay acts as Cable, but can be turned on or off depending on the redstone configuration."
+				""
+				"Devices connected after the Relay will be on or off depending if the Relay is on."
+			]
+			id: "527D21514339EBB1"
+			tasks: [{
+				id: "0941BC25BED836DB"
+				item: "refinedstorage:relay"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1F4F3FAEB799AE76"
+				"796656618B83E208"
+			]
+			description: ["The 1k Storage Part is used to craft the 1k Storage Block or Disk."]
+			id: "003AA75FB6E6D252"
+			tasks: [{
+				id: "7AE03913A43B5D56"
+				item: "refinedstorage:1k_storage_part"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"003AA75FB6E6D252"
+				"565FDACD4FE3EF83"
+			]
+			description: ["The 4k Storage Part is used to craft the 4k Storage Block or Disk."]
+			id: "47D52E415353EB1A"
+			tasks: [{
+				id: "1264B69258BEE19F"
+				item: "refinedstorage:4k_storage_part"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"47D52E415353EB1A"
+				"208162468B0C8CCB"
+			]
+			description: ["The 16k Storage Part is used to craft the 16k Storage Block or Disk."]
+			id: "33865456B20C3FDF"
+			tasks: [{
+				id: "2049906B693F0279"
+				item: "refinedstorage:16k_storage_part"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"33865456B20C3FDF"
+				"19153FA2DA92FD67"
+			]
+			description: ["The 64k Storage Part is used to craft the 64k Storage Block or Disk."]
+			id: "7568320378AFBAB9"
+			tasks: [{
+				id: "00558A10D014569A"
+				item: "refinedstorage:64k_storage_part"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7568320378AFBAB9"]
+			description: ["The 256k Storage Part is used to craft the 256k Storage Block or Disk."]
+			id: "6E675A9F9A7E7C1B"
+			tasks: [{
+				id: "61E999A3B9A8F4E1"
+				item: "rebornstorage:small_item_disk_part"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6E675A9F9A7E7C1B"]
+			description: ["The 1024k Storage Part is used to craft the 1024k Storage Block or Disk."]
+			id: "15C73C2B165CF574"
+			tasks: [{
+				id: "2B9A29C37E03A165"
+				item: "rebornstorage:medium_item_disk_part"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7CA3FBC05A1FD7D4"]
+			description: ["The 16384k Storage Part is used to craft the 16384k  Storage Block or Disk."]
+			id: "46F993BBD778205B"
+			tasks: [{
+				id: "756249D10B57B857"
+				item: "rebornstorage:larger_item_disk_part"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["15C73C2B165CF574"]
+			description: ["The 4096k Storage Part is used to craft the 4096k  Storage Block or Disk."]
+			id: "7CA3FBC05A1FD7D4"
+			tasks: [{
+				id: "29A859AD889C77C7"
+				item: "rebornstorage:large_item_disk_part"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["003AA75FB6E6D252"]
+			description: [
+				"A 1k  (1,000) Storage Disk is an item where items from the storage network are stored on. It has to be put in a Disk Drive."
+				""
+				"The 1k Storage Disk won’t despawn when dropped in the world."
+			]
+			id: "6925D5CE67590832"
+			size: 0.75d
+			tasks: [{
+				id: "48993824EEB6B87C"
+				item: "refinedstorage:1k_storage_disk"
+				type: "item"
+			}]
+			x: 6.6d
+			y: 2.0d
+		}
+		{
+			dependencies: ["003AA75FB6E6D252"]
+			description: [
+				"The 1k (1,000) Storage Block is a block that provides the system with storage. It is similar to the storage disk, but can be placed in the world."
+				""
+				"When breaking the 1k Storage Block, the items that it holds persist, so you won’t lose any of your items."
+				""
+				"The 1k Storage Block won’t despawn when dropped in the world."
+			]
+			id: "3D7B5BF7D430E1B4"
+			size: 0.75d
+			tasks: [{
+				id: "14457CB72EE6A261"
+				item: "refinedstorage:1k_storage_block"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["47D52E415353EB1A"]
+			description: [
+				"A 4k  (4,000) Storage Disk is an item where items from the storage network are stored on. It has to be put in a Disk Drive."
+				""
+				"The 4k Storage Disk won’t despawn when dropped in the world."
+			]
+			id: "0DE3F8575CBA86B2"
+			size: 0.75d
+			tasks: [{
+				id: "3F3B11E6377FEA44"
+				item: "refinedstorage:4k_storage_disk"
+				type: "item"
+			}]
+			x: 6.6d
+			y: 3.0d
+		}
+		{
+			dependencies: ["47D52E415353EB1A"]
+			description: [
+				"The 4k (4,000) Storage Block is a block that provides the system with storage. It is similar to the storage disk, but can be placed in the world."
+				""
+				"When breaking the 4k Storage Block, the items that it holds persist, so you won’t lose any of your items."
+				""
+				"The 4k Storage Block won’t despawn when dropped in the world."
+			]
+			id: "154FE0126956FB9F"
+			size: 0.75d
+			tasks: [{
+				id: "48F5AB46C8412AEB"
+				item: "refinedstorage:4k_storage_block"
+				type: "item"
+			}]
+			x: 7.475d
+			y: 3.0d
+		}
+		{
+			dependencies: ["33865456B20C3FDF"]
+			description: [
+				"A 16k  (16,000) Storage Disk is an item where items from the storage network are stored on. It has to be put in a Disk Drive."
+				""
+				"The 16k Storage Disk won’t despawn when dropped in the world."
+			]
+			id: "37688780490C2871"
+			size: 0.75d
+			tasks: [{
+				id: "4890AC324A1E8D1C"
+				item: "refinedstorage:16k_storage_disk"
+				type: "item"
+			}]
+			x: 6.6d
+			y: 4.0d
+		}
+		{
+			dependencies: ["33865456B20C3FDF"]
+			description: [
+				"The 16k (16,000) Storage Block is a block that provides the system with storage. It is similar to the storage disk, but can be placed in the world."
+				""
+				"When breaking the 16k Storage Block, the items that it holds persist, so you won’t lose any of your items."
+				""
+				"The 16k Storage Block won’t despawn when dropped in the world."
+			]
+			id: "3A0918FE13EEEDE6"
+			size: 0.75d
+			tasks: [{
+				id: "468E090829CA2D5A"
+				item: "refinedstorage:16k_storage_block"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7568320378AFBAB9"]
+			description: [
+				"A 64k  (64,000) Storage Disk is an item where items from the storage network are stored on. It has to be put in a Disk Drive."
+				""
+				"The 64k Storage Disk won’t despawn when dropped in the world."
+			]
+			id: "66984879E0BB78BC"
+			size: 0.75d
+			tasks: [{
+				id: "1A0C2A5ED077A838"
+				item: "refinedstorage:64k_storage_disk"
+				type: "item"
+			}]
+			x: 6.6d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7568320378AFBAB9"]
+			description: [
+				"The 64k (64,000) Storage Block is a block that provides the system with storage. It is similar to the storage disk, but can be placed in the world."
+				""
+				"When breaking the 64k Storage Block, the items that it holds persist, so you won’t lose any of your items."
+				""
+				"The 64k Storage Block won’t despawn when dropped in the world."
+			]
+			id: "6BCC0EAB0EA6976B"
+			size: 0.75d
+			tasks: [{
+				id: "78B7EEE48F38E797"
+				item: "refinedstorage:64k_storage_block"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6E675A9F9A7E7C1B"]
+			description: [
+				"A 256k  (256,000) Storage Disk is an item where items from the storage network are stored on. It has to be put in a Disk Drive."
+				""
+				"The 256k Storage Disk won’t despawn when dropped in the world."
+			]
+			id: "67079D10C9E9A9D9"
+			size: 0.75d
+			tasks: [{
+				id: "0658DDD5F2104ECA"
+				item: "rebornstorage:small_item_disk"
+				type: "item"
+			}]
+			x: 6.65d
+			y: 6.0d
+		}
+		{
+			dependencies: ["15C73C2B165CF574"]
+			description: [
+				"A 1024k  (1,024,000) Storage Disk is an item where items from the storage network are stored on. It has to be put in a Disk Drive."
+				""
+				"The 1024k Storage Disk won’t despawn when dropped in the world."
+			]
+			id: "0E73AD9343FC0B00"
+			size: 0.75d
+			tasks: [{
+				id: "123A5758EE4C0CF4"
+				item: "rebornstorage:medium_item_disk"
+				type: "item"
+			}]
+			x: 6.65d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7CA3FBC05A1FD7D4"]
+			description: [
+				"A 4096k  (4,096,000) Storage Disk is an item where items from the storage network are stored on. It has to be put in a Disk Drive."
+				""
+				"The 4096k Storage Disk won’t despawn when dropped in the world."
+			]
+			id: "02F44CFBC57379F3"
+			size: 0.75d
+			tasks: [{
+				id: "6C289F3DEF7FBD95"
+				item: "rebornstorage:large_item_disk"
+				type: "item"
+			}]
+			x: 6.65d
+			y: 7.975d
+		}
+		{
+			dependencies: ["46F993BBD778205B"]
+			description: [
+				"A 16,384k  (16,384,000) Storage Disk is an item where items from the storage network are stored on. It has to be put in a Disk Drive."
+				""
+				"The 16,384k Storage Disk won’t despawn when dropped in the world."
+			]
+			id: "5505D90751E849C4"
+			size: 0.75d
+			tasks: [{
+				id: "0815ABB74C0898DE"
+				item: "rebornstorage:larger_item_disk"
+				type: "item"
+			}]
+			x: 6.65d
+			y: 9.0d
+		}
+		{
+			dependencies: ["15C73C2B165CF574"]
+			description: [
+				"The 1024k (1,024,000) Storage Block is a block that provides the system with storage. It is similar to the storage disk, but can be placed in the world."
+				""
+				"When breaking the 1024k Storage Block, the items that it holds persist, so you won’t lose any of your items."
+				""
+				"The 1024k Storage Block won’t despawn when dropped in the world."
+			]
+			id: "751F9AD8B307E4EF"
+			size: 0.75d
+			tasks: [{
+				id: "38F8E12BCF8BF86A"
+				item: "extrastorage:block_1024k"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.025d
+		}
+		{
+			dependencies: ["6E675A9F9A7E7C1B"]
+			description: [
+				"The 256k (256,000) Storage Block is a block that provides the system with storage. It is similar to the storage disk, but can be placed in the world."
+				""
+				"When breaking the 256k Storage Block, the items that it holds persist, so you won’t lose any of your items."
+				""
+				"The 256k Storage Block won’t despawn when dropped in the world."
+			]
+			id: "1DC6A197173707A8"
+			size: 0.75d
+			tasks: [{
+				id: "6AC6FCC14C8C246E"
+				item: "extrastorage:block_256k"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["46F993BBD778205B"]
+			description: [
+				"The 16384k (16,384,000) Storage Block is a block that provides the system with storage. It is similar to the storage disk, but can be placed in the world."
+				""
+				"When breaking the 16384k Storage Block, the items that it holds persist, so you won’t lose any of your items."
+				""
+				"The 16384k Storage Block won’t despawn when dropped in the world."
+			]
+			id: "7DF1C9E63AA086AB"
+			size: 0.75d
+			tasks: [{
+				id: "5C434E3E8C892326"
+				item: "extrastorage:block_16384k"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7CA3FBC05A1FD7D4"]
+			description: [
+				"The 4096k (4,096,000) Storage Block is a block that provides the system with storage. It is similar to the storage disk, but can be placed in the world."
+				""
+				"When breaking the 4096k Storage Block, the items that it holds persist, so you won’t lose any of your items."
+				""
+				"The 4096k Storage Block won’t despawn when dropped in the world."
+			]
+			id: "3831E0C60BB386DF"
+			size: 0.75d
+			tasks: [{
+				id: "7A0F7A278088826B"
+				item: "extrastorage:block_4096k"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.975d
+		}
+		{
+			dependencies: [
+				"1A26F18B8BB17DC5"
+				"1054485EF3468B52"
+			]
+			description: [
+				""
+				""
+				"The Crafter is a block that crafts items with patterns. It can take speed upgrades to increase the crafting speed."
+				""
+				"With processing patterns, the Crafter has to face the correct input side of the machine."
+				"For crafting patterns it does not have to face anything."
+				""
+				"A Crafter can be chained by letting them face each other."
+				""
+				"This is useful when connecting a Crafter to a single machine. When you run out of slots in your first Crafter, the one facing the machine, you can put another Crafter behind the first Crafter to get additional Pattern slots."
+				"Crafter modes"
+				""
+				"The Crafter has 4 modes:"
+				"- Ignore redstone signal (default)"
+				"- Redstone signal unlocks autocrafting"
+				"- Redstone signal locks autocrafting"
+				"- Redstone pulse inserts next set"
+				""
+				"The (un)locking mechanism is used to block the Crafter, so it can’t insert items or fluids into the connected inventory."
+				""
+				"\"Blocking mode\" can be achieved with the \"Redstone pulse inserts next set\" mode."
+			]
+			id: "73634F74E710D621"
+			tasks: [{
+				id: "0F48DE92CE41C7A8"
+				item: "refinedstorage:crafter"
+				type: "item"
+			}]
+			x: -1.0063775510203925d
+			y: 5.8244897959183675d
+		}
+		{
+			dependencies: ["73634F74E710D621"]
+			description: ["Same as the previous crafter but has 27 slots instead of 9."]
+			id: "42304FAA34AFF935"
+			tasks: [{
+				id: "0A02E08F6A1A0B4B"
+				item: "extrastorage:iron_crafter"
+				type: "item"
+			}]
+			x: -1.0635204081632565d
+			y: 7.02448979591837d
+		}
+		{
+			dependencies: [
+				"6F5A9C77A4B7DC73"
+				"52BB3727C9BD9D08"
+			]
+			description: [
+				"The Raw Neural Processor is used to craft a Neural Processor."
+				""
+				"This is a very advanced  processor used primarely for more advanced Crafters."
+			]
+			id: "7DFEC37EA527709E"
+			size: 0.75d
+			tasks: [{
+				id: "5E15B9FDEEF7EE63"
+				item: "extrastorage:raw_neural_processor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7DFEC37EA527709E"]
+			description: ["The Neural advanced processor is used primarely for more advanced Crafters."]
+			id: "0D3D81DB908B42AB"
+			size: 0.75d
+			tasks: [{
+				id: "0742870F2F40F769"
+				item: "extrastorage:neural_processor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"0D3D81DB908B42AB"
+				"42304FAA34AFF935"
+			]
+			description: ["Just like the Iron Crafter but with 2 more rows and 5 times the speed."]
+			id: "24BFDD40BA1977F6"
+			tasks: [{
+				id: "3AF0D55DD4ABEA4E"
+				item: "extrastorage:gold_crafter"
+				type: "item"
+			}]
+			x: -1.0920918367346886d
+			y: 8.024489795918363d
+		}
+		{
+			dependencies: ["24BFDD40BA1977F6"]
+			description: ["Just like the Gold Crafter but with 2 more rows and 5x the speed again (so base 25x)."]
+			id: "2B12FE1FBE14E3ED"
+			tasks: [{
+				id: "3682570E87AE6784"
+				item: "extrastorage:diamond_crafter"
+				type: "item"
+			}]
+			x: -1.0920918367346886d
+			y: 9.053061224489795d
+		}
+		{
+			dependencies: ["2B12FE1FBE14E3ED"]
+			description: [
+				"I think you know what we are going to say."
+				""
+				"2 times more rows and yes, 5x more speed. (so base 125x)"
+			]
+			id: "17EA0708FE7B5698"
+			tasks: [{
+				id: "356E7082865AD91B"
+				item: "extrastorage:netherite_crafter"
+				type: "item"
+			}]
+			x: -1.0920918367346886d
+			y: 10.167346938775495d
+		}
+	]
+	title: "Refined Storage"
+}

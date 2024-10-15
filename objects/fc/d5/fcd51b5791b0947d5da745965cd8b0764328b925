@@ -1,0 +1,5 @@
+#Type list.
+blacklist = true
+#The list of entities that the mod will work on, depending on the type of list
+list = ["minecraft:slime"]
+

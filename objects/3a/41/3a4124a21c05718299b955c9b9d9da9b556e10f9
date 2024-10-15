@@ -1,0 +1,28 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "E": {
+            "tag": "forge:pixie_dust"
+          },
+          "X": {
+            "tag": "forge:ingots/elementium"
+          }
+        },
+        "pattern": [
+          " X ",
+          "XEX",
+          " X "
+        ],
+        "result": {
+          "item": "superiorshields:elementium_shield"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

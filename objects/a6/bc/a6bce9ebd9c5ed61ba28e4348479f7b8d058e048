@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "E": {
+            "tag": "thermal:flux_coil"
+          },
+          "G": {
+            "tag": "forge:gears/tin"
+          },
+          "X": {
+            "tag": "forge:ingots/iron"
+          }
+        },
+        "pattern": [
+          " G ",
+          "XEX",
+          " G "
+        ],
+        "result": {
+          "item": "superiorshields:flux_shield"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

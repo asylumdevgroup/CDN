@@ -1,0 +1,28 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "E": {
+            "tag": "malum:spectral_lens"
+          },
+          "X": {
+            "tag": "forge:soul_stained_steel_ingot"
+          }
+        },
+        "pattern": [
+          " X ",
+          "XEX",
+          " X "
+        ],
+        "result": {
+          "item": "superiorshields:soul_stained_shield"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}
