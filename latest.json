@@ -4,7 +4,7 @@
         {
             "type": "classpath",
             "path": "launcher.jar",
-            "hash": "43ae892359c284a3d9bbe8e78b009ff6a730422b6ec88d61c897506c23fd54f3",
+            "hash": "e5022c1b36c2478d498ecb21ba3a0b4b6c8f28e7b7d4086fe7301bb18ff1cb08",
             "url": "https://github.com/asylumdevgroup/Launcher/releases/download/1.0.0/launcher-fancy-1.0.0.jar"
         }
     ],
